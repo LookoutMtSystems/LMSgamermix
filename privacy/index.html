@@ -15,18 +15,49 @@
     padding: 40px 20px 80px;
   }
   main { max-width: 680px; margin: 0 auto; }
+  nav {
+    display: flex;
+    gap: 8px;
+    margin: 0 0 28px;
+  }
+  nav a {
+    color: #00802a;
+    text-decoration: none;
+    border: 1px solid #00802a;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+  nav a.current {
+    color: #000;
+    background: #00ff41;
+    border-color: #00ff41;
+  }
   h1 { color: #00ff41; font-size: 1.3rem; margin: 0 0 4px; }
   h2 { color: #00ff41; font-size: 0.95rem; margin: 32px 0 8px; }
   .date { font-size: 0.75rem; margin: 0 0 28px; }
   .summary { color: #00ff41; font-weight: 700; border: 1px solid #00802a; padding: 16px; }
   ul { padding-left: 20px; }
+  ol { padding-left: 20px; }
   a { color: #ffd400; }
+  .download {
+    display: inline-block;
+    color: #000;
+    background: #00ff41;
+    text-decoration: none;
+    padding: 12px 16px;
+    margin: 8px 0 4px;
+    font-weight: 700;
+  }
 </style>
 </head>
 <body>
 <main>
+  <nav>
+    <a href="../how/">HOW TO</a>
+    <a class="current" href="./">PRIVACY POLICY</a>
+  </nav>
   <h1>LMS GamerMix &mdash; Privacy Policy</h1>
-  <p class="date">Effective 25 August 2026</p>
+  <p class="date">Effective 27 August 2026</p>
 
   <p class="summary">
     LMS GamerMix does not collect your data. There is no account to create, no
@@ -56,7 +87,7 @@
     <li>Saved programs, meaning your pad layouts</li>
     <li>Effect settings and levels</li>
     <li>The address of the PC you last connected to</li>
-    <li>A fingerprint of your PC&rsquo;s certificate, so the app can recognise the same PC next time</li>
+    <li>A saved pairing so the app can recognise the same PC next time</li>
   </ul>
   <p>
     We cannot see any of it. None of it is sent to us, and deleting the app removes
@@ -67,9 +98,8 @@
   <h2>Your microphone</h2>
   <p>
     Audio is captured only while you are connected and streaming. It goes directly to
-    the PC whose address you entered, over your own network. The control connection is
-    protected with TLS and the audio itself is separately encrypted. It does not pass
-    through us, it is not recorded by the app, and it is not stored on your phone.
+    the PC you are using, over your own network. The audio is encrypted. It does not
+    pass through us, it is not recorded by the app, and it is not stored on your phone.
   </p>
 
   <h2>Purchases</h2>
