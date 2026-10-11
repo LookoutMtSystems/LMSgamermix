@@ -39,6 +39,13 @@
   ul { padding-left: 20px; }
   ol { padding-left: 20px; }
   a { color: #ffd400; }
+  .license {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 0.7rem;
+    border: 1px solid #00802a;
+    padding: 16px;
+  }
   .download {
     display: inline-block;
     color: #000;
@@ -57,7 +64,7 @@
     <a class="current" href="./">PRIVACY POLICY</a>
   </nav>
   <h1>LMS GamerMix &mdash; Privacy Policy</h1>
-  <p class="date">Effective 9 September 2026</p>
+  <p class="date">Effective 10 October 2026</p>
 
   <p class="summary">
     LMS GamerMix does not collect your data. There is no account to create, no
@@ -110,6 +117,11 @@
     which is the point of using the phone as a PC microphone. A persistent
     notification is shown for as long as that is happening. Stop ends capture.
     iOS keeps capture alive with its audio background mode in the same situation.
+  </p>
+  <p>
+    On Android, noise suppression cleans background noise out of your voice before it
+    is sent. It is on by default and can be switched off in Settings. It runs entirely
+    on your phone, and no audio leaves the phone to be processed.
   </p>
 
   <h2>Purchases</h2>
@@ -187,6 +199,44 @@
     the release notes of the app update that introduces them. If we ever begin
     collecting anything, this policy will say so before we do.
   </p>
+
+  <h2>Open-source software</h2>
+  <p>
+    Noise suppression in the Android app uses RNNoise, which is distributed under the
+    following license.
+  </p>
+  <pre class="license">Copyright (c) 2007-2017, 2024 Jean-Marc Valin
+Copyright (c) 2023 Amazon
+Copyright (c) 2017, Mozilla
+Copyright (c) 2005-2017, Xiph.Org Foundation
+Copyright (c) 2003-2004, Mark Borgerding
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Xiph.Org Foundation nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
 </main>
 </body>
 </html>
